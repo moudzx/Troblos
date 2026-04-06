@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جولة سياحية في طرابلس</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #e6f7ff;
+        color: #4a2e0f;
+      }
+      header,
+      footer {
+        background: #d0eaff;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 2px solid #7a5322;
+      }
+      main {
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+      .place {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid #b08b5c;
+        border-radius: 8px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+      .place:hover {
+        transform: scale(1.02);
+      }
+      .place img {
+        width: 260px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+        border: 2px solid #7a5322;
+      }
+      .place-content {
+        flex: 1;
+        min-width: 250px;
+      }
+      .place-content h2 {
+        margin-top: 0;
+        color: #5a3e1b;
+      }
+      .place-content p {
+        line-height: 1.6;
+      }
+      .link {
+        display: inline-block;
+        margin-top: 8px;
+        color: #0056b3;
+        text-decoration: none;
+      }
+      .link:hover {
+        text-decoration: underline;
+      }
+      footer p {
+        margin: 0;
+        color: #5a3e1b;
+      }
+      @media (max-width: 600px) {
+        .place {
+          flex-direction: column;
+          align-items: center;
+        }
+        .place img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>جولة في معالم طرابلس السياحية</h1></header>
+
+    <main>
+      <div class="place">
+        <img src="./images/castle.jpg" alt="قلعة سان جيل" />
+        <div class="place-content">
+          <h2>قلعة طرابلس (سان جيل)</h2>
+          <p>
+            قلعة صليبية الأصل بناها ريمون دي سان جيل عام 1109، أعيد بناؤها
+            لاحقًا خلال الحكم المملوكي، وتطل على المدينة القديمة. تعتبر من أهم
+            المعالم التاريخية في لبنان.
+          </p>
+          <a
+            class="link"
+            href="https://en.wikipedia.org/wiki/Citadel_of_Tripoli"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/mansouri.jpg" alt="الجامع المنصوري الكبير" />
+        <div class="place-content">
+          <h2>الجامع المنصوري الكبير</h2>
+          <p>
+            بُني في القرن الثالث عشر فوق كنيسة صليبية قديمة، ويُعد تحفة مملوكية
+            بهندسة معمارية راقية تشمل القباب، الأقواس، والمآذن العالية.
+          </p>
+          <a
+            class="link"
+            href="https://en.wikipedia.org/wiki/Mansouri_Great_Mosque"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/taynal.jpg" alt="مسجد طينال" />
+        <div class="place-content">
+          <h2>مسجد طينال</h2>
+          <p>
+            شُيّد في عام 1336 على أنقاض كنيسة قديمة. يتميز بقبة كبيرة، وعناصر
+            معمارية من بقايا رومانية. ويضم ضريح الحاكم المملوكي الأمير تينال.
+          </p>
+          <a class="link" href="https://en.wikipedia.org/wiki/Taynal_Mosque"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+      
+      <div class="place">
+        <img src="./images/marmaroun.jpg" alt="كنيسة مار مارون" />
+        <div class="place-content">
+          <h2>كنيسة مار مارون</h2>
+          <p>
+            تعتبر من أقدم الكنائس المارونية في المدينة، وتقع وسط الحي المسيحي في
+            طرابلس. تتميز بتصميمها البسيط، وجدرانها الحجرية السميكة التي تحاكي
+            التراث المعماري اللبناني، وتُعد مركزًا روحيًا وثقافيًا للمجتمع
+            المحلي.
+          </p>
+          <a class="link" href="https://en.wikipedia.org/wiki/Maronite_Church"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/abuali.jpg" alt="نهر أبو علي" />
+        <div class="place-content">
+          <h2>نهر أبو علي</h2>
+          <p>
+            نهر يمر عبر قلب المدينة القديمة، ويقسم طرابلس إلى ضفتين. كان مصدرًا
+            رئيسيًا للمياه، وقد ساهم في تطوّر الأسواق والخانات المحيطة به. يعبر
+            فوقه العديد من الجسور التاريخية التي تربط الأحياء القديمة ببعضها
+            البعض.
+          </p>
+          <a class="link" href="https://en.wikipedia.org/wiki/Abou_Ali_River"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/saba3.jpg" alt="برج السبع" />
+        <div class="place-content">
+          <h2>برج السبع</h2>
+          <p>
+            برج دفاعي بناه السلطان المملوكي برسباي في القرن الخامس عشر لحماية
+            المرفأ، ويعتبر جزءًا من التحصينات الساحلية للمدينة.
+          </p>
+          <a class="link" href="https://en.wikipedia.org/wiki/Barsbay_Tower"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/hammam.jpg" alt="الحمامات والخانات" />
+        <div class="place-content">
+          <h2>الحمامات والخانات</h2>
+          <p>
+            تضم طرابلس عدة خانات مثل خان الصابون وخان الخياطين، وحمامات قديمة
+            كحمام عز الدين، استخدمت للتجارة والاستجمام منذ قرون.
+          </p>
+          <a
+            class="link"
+            href="https://en.wikipedia.org/wiki/Tripoli,_Lebanon#Landmarks"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/souks.jpg" alt="الأسواق القديمة" />
+        <div class="place-content">
+          <h2>الأسواق القديمة</h2>
+          <p>
+            تعد من أكبر شبكات الأسواق التراثية في العالم العربي، وتحتوي على سوق
+            النحاسين، العطارين، والصاغة، حيث تباع المنتجات الحرفية التقليدية.
+          </p>
+          <a class="link" href="https://en.wikipedia.org/wiki/Tripoli,_Lebanon"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/palm.jpg" alt="جزر النخيل" />
+        <div class="place-content">
+          <h2>محمية جزر النخيل</h2>
+          <p>
+            تضم ثلاث جزر على بعد حوالي 5 كم من الساحل، تحتوي على أنواع نادرة من
+            السلاحف والطيور، وتعد محمية طبيعية محمية دوليًا.
+          </p>
+          <a
+            class="link"
+            href="https://en.wikipedia.org/wiki/Palm_Islands_Nature_Reserve"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/sea.jpg" alt="الكورنيش والمرفأ" />
+        <div class="place-content">
+          <h2>المرفأ والكورنيش البحري</h2>
+          <p>
+            واجهة بحرية رائعة للتنزه ومشاهدة الغروب. الميناء يُستخدم للصيد
+            المحلي ويقع قرب جزر النخيل، ويُعد من الأقدم في لبنان.
+          </p>
+          <a class="link" href="https://en.wikipedia.org/wiki/Tripoli,_Lebanon"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+
+      <div class="place">
+        <img src="./images/stadium.jpg" alt="الملعب الأولمبي" />
+        <div class="place-content">
+          <h2>الملعب الأولمبي الدولي</h2>
+          <p>
+            افتتح عام 1999 ويتسع لأكثر من 22 ألف متفرج. يُستخدم للأحداث الرياضية
+            الكبرى والمباريات الدولية.
+          </p>
+          <a
+            class="link"
+            href="https://en.wikipedia.org/wiki/Tripoli_International_Olympic_Stadium"
+            >المزيد 🛈</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 طرابلس - لبنان | طرابلس يا مدينتنا .. طرابلس يا حبيبتنا</p>
+    </footer>
+  </body>
+</html>

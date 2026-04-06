@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tripoli, Lebanon</title>
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%;
+    background-color: #e6f7ff;
+    color: #4a2e0f;
+  }
+
+  .lkbire {
+    background-color: rgba(255, 255, 255, 0.7);
+    min-height: 100%;
+    padding: 20px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d0eaff;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  nav h1 {
+    color: #7a5322;
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: #5a3e1b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #000;
+  }
+
+  .juwa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(100, 100, 100, 0.2);
+  }
+
+  .chmel {
+    flex: 1 1 500px;
+  }
+
+  .chmel h2 {
+    color: #7a5322;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .chmel p {
+    font-size: 1.2rem;
+    color: #3e2d1c;
+    margin-bottom: 30px;
+  }
+
+  .chmel ul li {
+    margin-left: 20px;
+    color: #3e2d1c;
+  }
+
+  .yamin {
+    flex: 1 1 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .yamin img {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 3px solid #7a5322;
+  }
+
+  button {
+    background-color: #cceeff;
+    color: #5a3e1b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #aadcee;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #5a3e1b;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+
+  </head>
+  <body> 
+  <div class="lkbire">
+    <nav>
+      <h1>طرابلس.. لبنان</h1>
+      <ul>
+        <li><a href="form.html" target="_blank">حجز زيارة</a></li>
+      </ul>
+    </nav>
+
+    <div class="juwa">
+      <div class="chmel">
+        <h2>يا أهلا وسهلا بطرابلس</h2>
+        <p>
+          تعا شوف سحر طرابلس! مدينة عالبحر، فيها تاريخ عريق، طيبة أهل ما بتلاقي منها بالعالم، وأكل فريد من نوعو.
+        </p>
+
+       
+        <p>طرابلس يا عروس البحر، عايشة بقلب التاريخ وبروح الحضارات.
+كل حجر بشوارعها بيحكي قصة، وكل نسمة هوا من ميناءها بتغني أحلى الألحان.
+بحورها عيون ساهرة، بتلمع من ذكريات أجدادنا وبتمسي تحكي عن أيام ما بتننسى.        </p>
+
+           <a href="history.html" target="_blank"><h3>فوت شوف التاريخ فوت!</h3></a>
+        <br>
+           <h3>أماكن لازم تزورهن</h3>
+        <ul>
+          <li>قلعة سان جيل</li>
+          <li>الأسواق القديمة (السوق العتيق)</li>
+          <li>الكورنيش والمينا</li>
+          <li>ساعة السلطان العثمانية التل</li>
+          <li><a href="places.html" style="text-decoration:none">وغيرو وغيراتو..</a></li>
+        </ul>
+        <br>
+        <h3>للتواصل</h3>
+        <p>
+          E-mail: mohamadmostafa79@gmail.com<br />
+          رقم الملف: 30930
+        </p>
+      </div>
+
+      <div class="yamin">
+        <button class="next">قلّب</button>
+        <img src="./images/img0.jpg" class="pic" />
+        <button class="prev">رجاع</button>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; ٢٠٢٥ مدينة طرابلس - لبنان</p>
+    </footer>
+  </div>
+</body>
+
+    <script>
+      let pic = document.querySelector(".pic");
+
+      let prev = document.querySelector(".prev");
+      prev.addEventListener("click", function () {
+        let x = pic.src.charAt(pic.src.length - 5);
+        x = x == 0 ? 9 : x - 1;
+        pic.src = "./images/img" + x + ".jpg";
+      });
+
+      let next = document.querySelector(".next");
+      next.addEventListener("click", function () {
+        let y = pic.src.charAt(pic.src.length - 5);
+        y == 9 ? y = 0 : y++;
+        pic.src = "./images/img" + y + ".jpg";
+      });
+    </script>
+  </body>
+</html>
