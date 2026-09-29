@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>خطط لزيارتك — طرابلس — لؤلؤة المتوسط</title>
+  <meta name="description" content="موقع سياحي وثقافي لمدينة طرابلس اللبنانية، لؤلؤة المتوسط." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="طرابلس — لؤلؤة المتوسط" />
+  <meta property="og:description" content="اكتشف تاريخ وثقافة وأماكن مدينة طرابلس اللبنانية." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="طرابلس — لؤلؤة المتوسط" />
+  <meta name="twitter:description" content="موقع سياحي وثقافي لمدينة طرابلس اللبنانية." />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="visit">
+  <div id="site-header"></div>
+  <div class="page">
+    <main class="visit-main">
+      <div class="container">
+        <div class="visit-head hero-in">
+          <h1>خطط لزيارتك</h1>
+          <p>اكتشف سحر طرابلس معنا، دعنا نرتب لك تفاصيل رحلتك.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>لماذا تزور طرابلس؟</h3>
+            <ul class="why-list">
+              <li><span class="dot"></span><span class="t">٣٥٠٠ عام من التاريخ المعماري في كل زقاق.</span></li>
+              <li><span class="dot"></span><span class="t">أفضل الحلويات والمأكولات في الشرق الأوسط.</span></li>
+              <li><span class="dot"></span><span class="t">ضيافة أهل الشمال الأصيلة وكرمهم المعهود.</span></li>
+            </ul>
+          </div>
+          <div class="info-card acc wide">
+            <h3>معلومات عملية</h3>
+            <div class="practical">
+              <div><h4>أفضل وقت للزيارة</h4><p>الربيع (مارس–يونيو) والخريف (سبتمبر–نوفمبر)</p></div>
+              <div><h4>المسافة من بيروت</h4><p>85 كم (ساعة ونصف بالسيارة تقريباً)</p></div>
+              <div><h4>العملة المعتمدة</h4><p>الليرة اللبنانية والدولار الأمريكي</p></div>
+              <div><h4>اللغة المتداولة</h4><p>العربية (الإنجليزية والفرنسية مفهومتان على نطاق واسع)</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking">
+          <div class="form-side">
+            <h2>احجز جولتك السياحية</h2>
+            <form id="visit-form" novalidate>
+              <div class="row two">
+                <div class="field " data-field="name"><label for="f-name">الاسم الكامل</label><input type="text" id="f-name" name="name" placeholder="أدخل اسمك" autocomplete="name" /><span class="err" role="alert"></span></div>
+                <div class="field " data-field="phone"><label for="f-phone">رقم الهاتف</label><input type="tel" id="f-phone" name="phone" class="ltr" dir="ltr" placeholder="00961 00 000 000" autocomplete="tel" /><span class="err" role="alert"></span></div>
+              </div>
+              <div class="row two">
+                <div class="field " data-field="email"><label for="f-email">البريد الإلكتروني</label><input type="email" id="f-email" name="email" class="ltr" dir="ltr" placeholder="email@example.com" autocomplete="email" /><span class="err" role="alert"></span></div>
+                <div class="field " data-field="date"><label for="f-date">تاريخ الزيارة</label><input type="date" id="f-date" name="date" /><span class="err" role="alert"></span></div>
+              </div>
+              <div class="row three">
+                <div class="field " data-field="destination"><label for="f-destination">الوجهة المفضلة</label><select id="f-destination" name="destination"><option value="">اختر الوجهة...</option><option value="جولة كاملة في المدينة">جولة كاملة في المدينة</option><option value="المدينة القديمة والأسواق">المدينة القديمة والأسواق</option><option value="القلعة والمعالم التاريخية">القلعة والمعالم التاريخية</option><option value="الميناء وجزر النخل">الميناء وجزر النخل (رحلة بحرية)</option><option value="جولة تذوق الحلويات">جولة تذوق المأكولات والحلويات</option></select><span class="err" role="alert"></span></div>
+                <div class="field " data-field="groupSize"><label for="f-groupSize">عدد الأفراد</label><input type="number" id="f-groupSize" name="groupSize" min="1" value="1" /><span class="err" role="alert"></span></div>
+              </div>
+              <div class="field">
+                <span class="lbl">نوع الرحلة</span>
+                <div class="radios">
+                  <label><input type="radio" name="tripType" value="فردي" /> فردي</label>
+                  <label><input type="radio" name="tripType" value="عائلي" checked /> عائلي</label>
+                  <label><input type="radio" name="tripType" value="جماعي" /> جماعي (مجموعة)</label>
+                </div>
+              </div>
+              <button type="submit" class="submit">تأكيد الحجز</button>
+            </form>
+          </div>
+          <div class="img-side"><img src="images/img0.jpg" alt="طرابلس لبنان" loading="lazy" /></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="site-footer"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
